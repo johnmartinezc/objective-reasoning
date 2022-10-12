@@ -33,28 +33,50 @@ function getPlaylistLength(playList){
 //     songs:['Linkin park', 'Black eye pea']
 // }))
 
-
-
-
 function getHardestHomework(homeWorkArray){
     if(homeWorkArray.length === 0){
         return ''
     }
   
   
-    let lowestHw = homeWorkArray[0].avarageScore
+    let lowestHwScore = homeWorkArray[0].avarageScore
     let lowestHwName = homeWorkArray[0].name
   
     for(let i = 0; i < homeWorkArray.length; i++){
-        if(homeWorkArray[i].avarageScore < lowestHw.avarageScore){
-            lowestHw = homeWorkArray[i].avarageScore
+        if(homeWorkArray[i].avarageScore < lowestHwScore){
+            lowestHwScore = homeWorkArray[i].avarageScore
             lowestHwName = homeWorkArray[i].name
         }
     }
-    return lowestHw.name
+    return lowestHwName
   }
+
+console.log(getHardestHomework([
+    // {name: 'hip-hip', avarageScore: 22},
+    // {name: 'we-go-home', avarageScore: 1},
+    // {name: 'first-to-fight', avarageScore: 500}
+  ]))
+
+
+// function getHardestHomework(homeWorkArray){
+//     if(homeWorkArray.length === 0){
+//         return ''
+//     }
   
-  console.log(getHardestHomework([]))
+  
+//     let lowestHw = homeWorkArray[0].avarageScore
+//     let lowestHwName = homeWorkArray[0].name
+  
+//     for(let i = 0; i < homeWorkArray.length; i++){
+//         if(homeWorkArray[i].avarageScore < lowestHw.avarageScore){
+//             lowestHw = homeWorkArray[i].avarageScore
+//             lowestHwName = homeWorkArray[i].name
+//         }
+//     }
+//     return lowestHw.name
+//   }
+  
+//   console.log(getHardestHomework([]))
   
 
 
