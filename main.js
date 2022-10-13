@@ -39,12 +39,12 @@ function getHardestHomework(homeWorkArray){
     }
   
   
-    let lowestHwScore = homeWorkArray[0].avarageScore
+    let lowestHwScore = homeWorkArray[0].averageScore
     let lowestHwName = homeWorkArray[0].name
   
     for(let i = 0; i < homeWorkArray.length; i++){
-        if(homeWorkArray[i].avarageScore < lowestHwScore){
-            lowestHwScore = homeWorkArray[i].avarageScore
+        if(homeWorkArray[i].averageScore < lowestHwScore){
+            lowestHwScore = homeWorkArray[i].averageScore
             lowestHwName = homeWorkArray[i].name
         }
     }
@@ -52,9 +52,9 @@ function getHardestHomework(homeWorkArray){
   }
 
 console.log(getHardestHomework([
-    // {name: 'hip-hip', avarageScore: 22},
-    // {name: 'we-go-home', avarageScore: 1},
-    // {name: 'first-to-fight', avarageScore: 500}
+    {name: 'hip-hip', averageScore: 1},
+    {name: 'we-go-home', averageScore: 33},
+    {name: 'first-to-fight', averageScore: 500}
   ]))
 
 
